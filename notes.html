@@ -1,0 +1,68 @@
+Tables
+<table>	Defines a table
+    <th>	Defines a header cell in a table
+    <tr>	Defines a row in a table
+    <td>	Defines a cell in a table
+    <caption>	Defines a table caption
+    <colgroup>	Specifies a group of one or more columns in a table for formatting
+    <col>	Specifies column properties for each column within a <colgroup> element
+    <thead>	Groups the header content in a table
+    <tbody>	Groups the body content in a table
+    <tfoot>	Groups the footer content in a table
+Table attributes:
+colspan="n" - To make a cell span over n column
+rowspan="n" - To make a cell span over n rows
+__________________________________________________________________
+ARIA roles
+Use ARIA roles.
+ARIA roles are values that indicate the function of a page element or region for screen readers. They may be placed inside <div> and <span> tags with the attribute role. ARIA roles include main, form, navigation, and search.
+
+For example, if you want to indicate that the main content represents a main role , you can place an ARIA landmark like so:
+
+<body role=main>
+    <div>
+        <h1>Hello World!</h1>
+    </div>
+</body>
+__________________________________________________________________
+Semantic tag element
+<article>
+    <aside> self-contained, independent content set aside from the rest of the content
+    <details> encapsulate around the summary tag for the dropdown icon to appear
+    <summary> Add some textsurrounded by the details tag. Dropdown should appear after being surrounded with details tag
+    <figcaption> this tag gives the caption to its figure. Figure tag is encapsulating figurecaption.
+        - figurecaption must be located at the beginning or end of figure
+    <figure> this tag encapsulates figcaption.
+    <footer> content that is located at the bottom of a section of a page
+    <header> content that would typically have a nav tag, heading, title, logo, etc...
+    <main> main content of doc, must not have more than 1 per document./represents the body
+    <mark> highlighted text
+    <nav> nav links
+    <section> section within a doc
+    <time> defines a date/time
+        -attribute: datetime=""
+__________________________________________________________________
+HTML reg elements
+<h1></h1> - <h6></h6> headers
+<p></p> - paragraph tags
+<br> - line break
+<hr> - horizontal line
+<script></script> - Used to embed client-side Javascript
+<meta> - Defines metadata (information) about an HTML doc. Always located within the head element.
+- Machine parseable (will not show on the page itself)
+- Allows us webdesigners to really take control of the viewport.
+<link> - defines the relationship between the document being worked on and an external document source
+<iframe./></iframe> - an inline frame.
+allow	 	Specifies a feature policy for the <iframe>
+allowfullscreen	boolean 	Set to true if the <iframe> can activate fullscreen mode by calling the requestFullscreen() method
+height(px)
+width(px)
+sandbox - Enables an extra set of restrictions for the content in an <iframe>
+Examples:
+a. allow-forms
+b. allow-pointer-lock
+c. allow-popups
+d. allow-same-origin
+e. allow-scripts
+f. allow-top-navigation
+_________________________________________________________________
